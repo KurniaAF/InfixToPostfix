@@ -22,6 +22,19 @@ class stack {
 		}
 		data[++top] = input;
 	}
+	
+	void pop() {
+		if (top == -1) {
+			cout << "Stack Kosong" << endl;
+			return;
+		}
+		top--;
+	}
+	
+	int Top() {
+		return data[top];
+	}
+};
 
 int main () {
 	
