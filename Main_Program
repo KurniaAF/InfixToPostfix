@@ -5,6 +5,24 @@
 
 using namespace std;
 
-int main () {
+class stack {
+	char data[MAX_STACK_SIZE];
+	char top;
+	
+	public:
+		stack() {
+			top = -1;
+		}
+		
+	
+	void push(char input){
+		if (top == MAX_STACK_SIZE-1) {
+			cout << "Melebihi Batas Stack" << endl;
+			return;
+		}
+		data[++top] = input;
+	}
 
+int main () {
+	
 }
